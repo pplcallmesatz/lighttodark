@@ -1,0 +1,31 @@
+{
+  "name": "Light-to-Dark",
+  "description": "To create light to dark mode",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "Light to Dark 🌓",
+    "manifest": "src/manifest.json",
+    "main": "lighttodark.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.8.0"
+  },
+  "author": "Satheesh Kumar Selvaraj <satheesh@mallow-tech.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pplcallmesatz/lighttodark.git"
+  }
+}
