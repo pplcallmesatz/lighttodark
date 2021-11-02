@@ -1,0 +1,24 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+    "icon": "icon.png",
+    "identifier": "com.lighttodark.sketch.messenger",
+    "commands": [
+        {
+            "name": "Convert to Dark mode",
+            "identifier": "lighttodark.lighttodark-identifier",
+            "script": "./converttodark.js",
+            "shortcut": "ctrl shift d"
+
+    }
+    
+  ],
+    "menu": {
+        "title": "Light To Dark 🌓",
+        "items": [
+      "lighttodark.lighttodark-identifier",
+      "lighttodarkpallet.lighttodark-identifier",
+        "checkerror.lighttodark-identifier",
+        "biolerplate.lighttodark-identifier"
+    ]
+    }
+}
