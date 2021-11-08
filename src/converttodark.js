@@ -92,34 +92,46 @@ export default function () {
                 default:
                     // code block
             }
+            // Function dd starts
             function dd(sharedStyle, type) {
                 let myLayerStyle;
                 let Name = sharedStyle.name;
                 let splitName = Name.split("light/");
-                if (splitName.length <= 1) {
-                    UI.message("There is a error in the selected layer: " + type[2]);
-                    var layerDefect = document.getLayerWithID(type[1])
+                let checkDarkName = Name.includes("dark/");
+                let checkLightName = Name.includes("dark/");
+                if ((checkDarkName != false) && (checkLightName != false)) {
 
+                    UI.alert("Style Error", "You have applied Dark shared style in the light version: " + type[2]);
+                    var layerDefect = document.getLayerWithID(type[1])
                     if (layerDefect) {
                         document.centerOnLayer(layerDefect)
                         layerDefect.selected = true;
-
-                        return false;
-                    } else {
                     }
+                       return false;
                 } else {
-                }
-                let getName = "dark/" + splitName[1];
+                                    let getName = "dark/" + splitName[1];
                 if (type[0] === "text") {
                     myLayerStyle = sharedTextStyles.find(sharedTextStyles => sharedTextStyles.name == getName)
 
                 } else {
                     myLayerStyle = sharedStyles.find(sharedStyles => sharedStyles.name == getName)
                 }
-                let shStyle = [myLayerStyle.style, myLayerStyle.id];
-                art[i].style = shStyle[0];
-                art[i].sharedStyleId = shStyle[1];
+                    if(myLayerStyle != undefined){
+                        let shStyle = [myLayerStyle.style, myLayerStyle.id];
+                        art[i].style = shStyle[0];
+                        art[i].sharedStyleId = shStyle[1];            
+                    }else{
+                        UI.alert("Style Error", "No Dark style found for this shared style: " + Name);
+                    var layerDefect = document.getLayerWithID(type[1])
+                        document.centerOnLayer(layerDefect);
+                        console.log(type[2])
+                        layerDefect.selected = true;
+                    }
+            
+                }
+
             }
+            // Function dd ends
         }
 
     }
@@ -128,7 +140,10 @@ export default function () {
         document.centerOnLayer(data.layers[0])
     }
 
+    function success(){
     document.save()
     UI.message("Document saved Successfully 🎉")
+    }
+
 
 }
