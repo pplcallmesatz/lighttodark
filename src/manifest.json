@@ -7,7 +7,13 @@
             "name": "Convert to Dark mode",
             "identifier": "lighttodark.lighttodark-identifier",
             "script": "./converttodark.js",
-            "shortcut": "ctrl shift d"
+            "shortcut": "ctrl shift c"
+
+    },  {
+            "name": "Boilerplate",
+            "identifier": "biolerplate.lighttodark-identifier",
+            "script": "./biolerplate.js",
+            "shortcut": "ctrl shift b"
 
     }
     
