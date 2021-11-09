@@ -66,3 +66,10 @@ We made your work simpler by using boilerplate
     This alert will be thrown, when you have not created the dark style for the light
     
     For example: if you have the layer style **`light/primary/background`**  and not in the dark style
+    
+    
+    
+    
+    
+[![img buymeacoffee](https://user-images.githubusercontent.com/25052643/140907227-2c511ad3-4179-4b43-baf2-a14253e4ad84.jpg)](   https://www.buymeacoffee.com/pplcallmesatz)
+
