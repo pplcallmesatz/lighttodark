@@ -11,6 +11,8 @@ var SharedStyle = require('sketch/dom').SharedStyle
 var rmPage = document.getLayersNamed("Pallet")
 
 export default function () {
+    var pageLayer = document.getLayersNamed("Light")
+    if(pageLayer < 1){
 if (rmPage.length > 0) {
     rmPage[0].remove()
 }
@@ -9359,6 +9361,9 @@ for (let i = 0; i < layers.length; i++) {
         , name: 'Light'
     , })
     lightPage.selected = true;
-
+    }
+    else{
+        UI.alert("Error","You have already executed the boiler plate in this document")
+    }
 //END of the Script
 }

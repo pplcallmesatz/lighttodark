@@ -97,9 +97,9 @@ export default function () {
                 let myLayerStyle;
                 let Name = sharedStyle.name;
                 let splitName = Name.split("light/");
-                let checkDarkName = Name.includes("dark/");
+                let checkDarkName = Name.includes("/");
                 let checkLightName = Name.includes("dark/");
-                if ((checkDarkName != false) && (checkLightName != false)) {
+                if (checkDarkName[0] === "dark") {
 
                     UI.alert("Style Error", "You have applied Dark shared style in the light version: " + type[2]);
                     var layerDefect = document.getLayerWithID(type[1])
