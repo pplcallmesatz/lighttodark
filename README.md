@@ -2,7 +2,7 @@
 
 A lightweight extension to simplify your work in a single tap. We also help you to organise your shared styles in better order. 
 
-
+Download the extension by [clicking here](https://github.com/pplcallmesatz/lighttodark/releases/download/v1.3.3/lighttodark.sketchplugin.zip)
 
 ## How does it help you?
 
