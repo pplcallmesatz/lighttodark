@@ -1,7 +1,7 @@
 {
   "name": "Light-to-Dark",
   "description": "To create light to dark mode",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
@@ -23,7 +23,8 @@
   "devDependencies": {
     "@skpm/builder": "^0.8.0"
   },
-  "author": "Satheesh Kumar Selvaraj <satheeshssk@icloud.com>",
+  "author": "Satheesh Kumar Selvaraj <satheesh@mallow-tech.com>",
+  "owner": "Satheesh Kumar Selvaraj <satheeshssk@icloud.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/pplcallmesatz/lighttodark.git"
