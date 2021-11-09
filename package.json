@@ -1,7 +1,7 @@
 {
   "name": "Light-to-Dark",
   "description": "To create light to dark mode",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "engines": {
     "sketch": ">=49.0"
   },
